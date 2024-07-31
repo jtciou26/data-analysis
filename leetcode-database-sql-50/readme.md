@@ -25,16 +25,14 @@ console.log(JSON.stringify(questionNames));
 '''
 import os
 
-# Replace this with the actual output from the console
 question_names = [
+    *Replace this with the actual output from the console*
     ...
 ]
 
-# Ensure the directory exists
 output_dir = "leetcode_sql_files"
 os.makedirs(output_dir, exist_ok=True)
 
-# Create .sql files for each question name
 for name in question_names:
     safe_name = name.replace(" ", "_").replace("/", "_")
     file_path = os.path.join(output_dir, f"{safe_name}.sql")
