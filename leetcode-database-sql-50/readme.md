@@ -22,7 +22,9 @@ console.log(JSON.stringify(questionNames));
 ```
 
 2. Create sql files for each question name using Python
-'''
+
+```
+
 import os
 
 question_names = [
@@ -39,4 +41,4 @@ for name in question_names:
     
 print(f"Created {len(question_names)} SQL files in '{output_dir}' directory.")
 
-'''
+```
